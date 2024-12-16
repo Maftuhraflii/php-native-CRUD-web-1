@@ -1,0 +1,192 @@
+<style>
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9; /* Latar belakang hijau muda */
+    display: flex;
+    height: 100vh;
+    color: #2e7d32; /* Hijau tua */
+}
+
+/* Container Dashboard */
+.dashboard-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar Dashboard */
+.dashboard {
+    width: 250px;
+    background-color: #2e7d32; /* Hijau tua */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-title {
+    font-size: 24px;
+    color : white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dashboard-menu ul {
+    list-style: none;
+    width: 100%;
+}
+
+.dashboard-menu li {
+    margin-bottom: 15px;
+}
+
+.dashboard-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-menu a:hover {
+    background-color: #1b5e20; /* Hijau lebih gelap untuk hover */
+}
+
+/* Konten Utama */
+.content {
+    flex: 1;
+    padding: 30px;
+    background-color: #a8d5ba; /* Latar belakang putih */
+    overflow-y: auto;
+}
+
+.content h2 {
+    color: #2e7d32;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1500px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    color: #2c6e49; /* Warna hijau tua untuk judul */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.patient-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.patient-table th, .patient-table td {
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.patient-table th {
+    width: 35%;
+    background-color: #2c6e49; /* Warna hijau tua */
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.patient-table td {
+    background-color: #f0f8f5; /* Warna hijau muda untuk kolom data */
+    color: #2c6e49;
+    border-bottom: 1px solid #c8e6c9; /* Garis bawah sel */
+}
+
+.patient-table tr:last-child td {
+    border-bottom: none; /* Hapus garis bawah pada baris terakhir */
+}
+
+.edit-btn {
+    padding: 6px 12px;
+    background-color: #2c6e49; /* Warna hijau tua */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-btn:hover {
+    background-color: #3b8b60; /* Warna hijau lebih terang untuk hover */
+}
+
+/* Form Styling */
+.purchase-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 5px rgba(46, 125, 50, 0.5);
+}
+
+.submit-btn {
+    position: fixed;  /* Agar tombol tetap di tempat meski halaman digulir */
+    top: 300px;        /* Jarak dari atas */
+    right: 1435px;      /* Jarak dari kanan */
+    z-index: 1000;    /* Menjamin tombol tetap di atas konten lain */
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #2e7d32;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1b5e20;
+}
+
+
+</style>
